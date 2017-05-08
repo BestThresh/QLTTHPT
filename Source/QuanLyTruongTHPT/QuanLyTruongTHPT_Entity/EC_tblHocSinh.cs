@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyTruongTHPT_Entity
 {
-    class EC_tblJocSinh
+    class EC_tblHocSinh
     {
     }
 }
