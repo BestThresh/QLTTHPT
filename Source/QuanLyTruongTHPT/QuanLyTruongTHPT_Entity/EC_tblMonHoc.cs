@@ -4,9 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyTruongTHPT_Entity
+namespace QL_QV_HS_THPT_Entity
 {
-    class EC_tblMonHoc
+    public class EC_tblMonhoc
     {
+        private string _MaMon;
+
+        public string MaMon
+        {
+            get { return _MaMon; }
+            set { _MaMon = value; }
+        }
+        private string _TenMon;
+
+        public string TenMon
+        {
+            get { return _TenMon; }
+            set { _TenMon = value; }
+        }
     }
 }
