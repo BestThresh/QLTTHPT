@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyTruongTHPT_FROM;
+using QuanLyTruongTHPT_FORM;
 namespace QuanLyTruongTHPT
 {
     static class Program
