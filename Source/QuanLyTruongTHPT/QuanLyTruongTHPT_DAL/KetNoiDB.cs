@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace QL_GV_HS_THPT_DAL
+namespace QuanLyTruongTHPT_DAL
 {
     public class KetNoiDB
     {

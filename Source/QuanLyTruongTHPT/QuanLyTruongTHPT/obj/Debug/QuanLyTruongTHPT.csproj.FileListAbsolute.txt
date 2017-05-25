@@ -1,4 +1,3 @@
-C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT.exe.config
-C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.csprojResolveAssemblyReference.cache
 C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.Properties.Resources.resources
 C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.csproj.GenerateResource.Cache
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT.exe.config
