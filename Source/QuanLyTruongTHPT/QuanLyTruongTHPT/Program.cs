@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using QuanLyTruongTHPT_FORM;
+
 namespace QuanLyTruongTHPT
 {
     static class Program
