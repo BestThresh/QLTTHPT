@@ -127,6 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDangNhap";
             this.Text = "Dang Nhap";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangNhap_FormClosing);
             this.Load += new System.EventHandler(this.frmDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
