@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace QL_QV_HS_THPT_Entity
+namespace QuanLyTruongTHPT_Entity
 {
     public class EC_tblUser
     {

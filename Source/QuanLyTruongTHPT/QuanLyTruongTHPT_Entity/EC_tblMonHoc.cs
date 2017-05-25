@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QL_QV_HS_THPT_Entity
+namespace QuanLyTruongTHPT_Entity
 {
     public class EC_tblMonhoc
     {

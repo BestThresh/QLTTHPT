@@ -70,7 +70,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\QuanLyTruongTHPT_DAL\QuanLyTruongTHPT_DAL.csproj">
+      <Project>{eda17b30-1e40-4993-9629-cf724977c963}</Project>
+      <Name>QuanLyTruongTHPT_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyTruongTHPT_Entity\QuanLyTruongTHPT_Entity.csproj">
+      <Project>{233d67b1-6f3a-40f2-8bc4-e05b947a11c4}</Project>
+      <Name>QuanLyTruongTHPT_Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

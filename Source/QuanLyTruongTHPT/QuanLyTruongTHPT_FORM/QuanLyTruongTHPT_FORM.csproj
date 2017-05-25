@@ -46,47 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmGiaoVien.cs" />
+    <Compile Include="frmGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGiaoVien.Designer.cs">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDangNhap.cs" />
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHocSinh.cs" />
+    <Compile Include="frmHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmHocSinh.Designer.cs">
       <DependentUpon>frmHocSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHuongDan.cs" />
+    <Compile Include="frmHuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmHuongDan.Designer.cs">
       <DependentUpon>frmHuongDan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQLGD.cs" />
+    <Compile Include="frmQLGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQLGD.Designer.cs">
       <DependentUpon>frmQLGD.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanTri.cs" />
+    <Compile Include="frmQuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQuanTri.Designer.cs">
       <DependentUpon>frmQuanTri.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThemGV.cs" />
+    <Compile Include="frmThemGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmThemGV.Designer.cs">
       <DependentUpon>frmThemGV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThemTaiKhoan.cs" />
+    <Compile Include="frmThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmThemTaiKhoan.Designer.cs">
       <DependentUpon>frmThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTimGV.cs" />
+    <Compile Include="frmTimGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTimGV.Designer.cs">
       <DependentUpon>frmTimGV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTKB.cs" />
+    <Compile Include="frmTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTKB.Designer.cs">
       <DependentUpon>frmTKB.cs</DependentUpon>
     </Compile>
@@ -114,7 +136,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\QuanLyTruongTHPT_BUS\QuanLyTruongTHPT_BUS.csproj">
+      <Project>{13421872-0bac-457c-95f5-ac3c42ecb77e}</Project>
+      <Name>QuanLyTruongTHPT_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyTruongTHPT_DAL\QuanLyTruongTHPT_DAL.csproj">
+      <Project>{eda17b30-1e40-4993-9629-cf724977c963}</Project>
+      <Name>QuanLyTruongTHPT_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyTruongTHPT_Entity\QuanLyTruongTHPT_Entity.csproj">
+      <Project>{233d67b1-6f3a-40f2-8bc4-e05b947a11c4}</Project>
+      <Name>QuanLyTruongTHPT_Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
