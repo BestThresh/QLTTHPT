@@ -38,9 +38,9 @@
             // 
             this.btnHocsinh.Location = new System.Drawing.Point(151, 99);
             this.btnHocsinh.Name = "btnHocsinh";
-            this.btnHocsinh.Size = new System.Drawing.Size(75, 36);
+            this.btnHocsinh.Size = new System.Drawing.Size(65, 36);
             this.btnHocsinh.TabIndex = 0;
-            this.btnHocsinh.Text = "Quan Ly Hoc Sinh";
+            this.btnHocsinh.Text = "Quản lý học sinh\r\n";
             this.btnHocsinh.UseVisualStyleBackColor = true;
             this.btnHocsinh.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -50,7 +50,7 @@
             this.buttonTKB.Name = "buttonTKB";
             this.buttonTKB.Size = new System.Drawing.Size(75, 36);
             this.buttonTKB.TabIndex = 1;
-            this.buttonTKB.Text = "Thoi Khoa Bieu";
+            this.buttonTKB.Text = "Thời khóa biểu";
             this.buttonTKB.UseVisualStyleBackColor = true;
             this.buttonTKB.Click += new System.EventHandler(this.buttonTKB_Click);
             // 
@@ -58,19 +58,19 @@
             // 
             this.btnGiaoVien.Location = new System.Drawing.Point(151, 215);
             this.btnGiaoVien.Name = "btnGiaoVien";
-            this.btnGiaoVien.Size = new System.Drawing.Size(75, 41);
+            this.btnGiaoVien.Size = new System.Drawing.Size(65, 41);
             this.btnGiaoVien.TabIndex = 2;
-            this.btnGiaoVien.Text = "Quan Ly Giao Vien";
+            this.btnGiaoVien.Text = "Quản lý giáo viên";
             this.btnGiaoVien.UseVisualStyleBackColor = true;
             this.btnGiaoVien.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(327, 233);
+            this.button4.Location = new System.Drawing.Point(327, 215);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(75, 41);
             this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
+            this.button4.Text = "Hướng dẫn";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // frmMain
@@ -83,7 +83,7 @@
             this.Controls.Add(this.buttonTKB);
             this.Controls.Add(this.btnHocsinh);
             this.Name = "frmMain";
-            this.Text = "frmMain";
+            this.Text = "Quản lý trường THPT";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
 
