@@ -16,5 +16,10 @@ namespace QuanLyTruongTHPT_FORM
         {
             InitializeComponent();
         }
+
+        private void frmHocSinh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
