@@ -54,12 +54,12 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtTimMaHS = new System.Windows.Forms.TextBox();
+            this.txtTimTenHS = new System.Windows.Forms.TextBox();
+            this.txtTimHoHS = new System.Windows.Forms.TextBox();
+            this.cboTimMaLop = new System.Windows.Forms.ComboBox();
+            this.cboTimTonGiao = new System.Windows.Forms.ComboBox();
+            this.cboTimDanToc = new System.Windows.Forms.ComboBox();
             this.dgvHocSinh = new System.Windows.Forms.DataGridView();
             this.colMaHS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -336,52 +336,61 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox8
+            // txtTimMaHS
             // 
-            this.textBox8.Location = new System.Drawing.Point(140, 313);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 26;
+            this.txtTimMaHS.Location = new System.Drawing.Point(140, 313);
+            this.txtTimMaHS.Name = "txtTimMaHS";
+            this.txtTimMaHS.Size = new System.Drawing.Size(100, 20);
+            this.txtTimMaHS.TabIndex = 26;
+            this.txtTimMaHS.Text = "- Mã học sinh -";
+            this.txtTimMaHS.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // textBox11
+            // txtTimTenHS
             // 
-            this.textBox11.Location = new System.Drawing.Point(385, 313);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 32;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.txtTimTenHS.Location = new System.Drawing.Point(385, 313);
+            this.txtTimTenHS.Name = "txtTimTenHS";
+            this.txtTimTenHS.Size = new System.Drawing.Size(100, 20);
+            this.txtTimTenHS.TabIndex = 32;
+            this.txtTimTenHS.Text = "- Tên học sinh -";
+            this.txtTimTenHS.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
-            // textBox12
+            // txtTimHoHS
             // 
-            this.textBox12.Location = new System.Drawing.Point(262, 312);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 34;
+            this.txtTimHoHS.Location = new System.Drawing.Point(262, 312);
+            this.txtTimHoHS.Name = "txtTimHoHS";
+            this.txtTimHoHS.Size = new System.Drawing.Size(100, 20);
+            this.txtTimHoHS.TabIndex = 34;
+            this.txtTimHoHS.Text = "- Họ -";
+            this.txtTimHoHS.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
-            // comboBox1
+            // cboTimMaLop
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(504, 313);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 36;
+            this.cboTimMaLop.FormattingEnabled = true;
+            this.cboTimMaLop.Location = new System.Drawing.Point(504, 313);
+            this.cboTimMaLop.Name = "cboTimMaLop";
+            this.cboTimMaLop.Size = new System.Drawing.Size(121, 21);
+            this.cboTimMaLop.TabIndex = 36;
+            this.cboTimMaLop.Text = "- Mã lớp -";
+            this.cboTimMaLop.SelectedIndexChanged += new System.EventHandler(this.cboTimMaLop_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboTimTonGiao
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(800, 313);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 37;
+            this.cboTimTonGiao.FormattingEnabled = true;
+            this.cboTimTonGiao.Location = new System.Drawing.Point(800, 313);
+            this.cboTimTonGiao.Name = "cboTimTonGiao";
+            this.cboTimTonGiao.Size = new System.Drawing.Size(121, 21);
+            this.cboTimTonGiao.TabIndex = 37;
+            this.cboTimTonGiao.Text = "- Tôn giáo -";
             // 
-            // comboBox3
+            // cboTimDanToc
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(652, 313);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 38;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.cboTimDanToc.FormattingEnabled = true;
+            this.cboTimDanToc.Location = new System.Drawing.Point(652, 313);
+            this.cboTimDanToc.Name = "cboTimDanToc";
+            this.cboTimDanToc.Size = new System.Drawing.Size(121, 21);
+            this.cboTimDanToc.TabIndex = 38;
+            this.cboTimDanToc.Text = "- Dân tộc -";
+            this.cboTimDanToc.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // dgvHocSinh
             // 
@@ -473,12 +482,12 @@
             this.ClientSize = new System.Drawing.Size(944, 603);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvHocSinh);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.cboTimDanToc);
+            this.Controls.Add(this.cboTimTonGiao);
+            this.Controls.Add(this.cboTimMaLop);
+            this.Controls.Add(this.txtTimHoHS);
+            this.Controls.Add(this.txtTimTenHS);
+            this.Controls.Add(this.txtTimMaHS);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnSua);
@@ -522,12 +531,12 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtTimMaHS;
+        private System.Windows.Forms.TextBox txtTimTenHS;
+        private System.Windows.Forms.TextBox txtTimHoHS;
+        private System.Windows.Forms.ComboBox cboTimMaLop;
+        private System.Windows.Forms.ComboBox cboTimTonGiao;
+        private System.Windows.Forms.ComboBox cboTimDanToc;
         private System.Windows.Forms.DataGridView dgvHocSinh;
         private System.Windows.Forms.Label lblNgaySinh;
         private System.Windows.Forms.ComboBox cboTonGiao;
