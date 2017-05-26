@@ -469,5 +469,35 @@ namespace QuanLyTruongTHPT_FORM
             DataTable tbl = busHS.getHocsinh(dieukien);
             dgvHocSinh.DataSource = tbl;
         }
+
+        private void txtTimMaHS_Enter(object sender, EventArgs e)
+        {
+            txtMaHS.SelectionStart = txtMaHS.Text.Length;
+        }
+
+        private void txtTimHoHS_Enter(object sender, EventArgs e)
+        {
+            txtHo.SelectionStart = txtHo.Text.Length;
+        }
+
+        private void txtTimTenHS_Enter(object sender, EventArgs e)
+        {
+            txtTen.SelectionStart = txtTen.Text.Length;
+        }
+
+        private void cboTimMaLop_Enter(object sender, EventArgs e)
+        {
+            cboMaLop.SelectionStart = cboMaLop.Text.Length;
+        }
+
+        private void cboTimDanToc_Enter(object sender, EventArgs e)
+        {
+            cboDanToc.SelectionStart = cboDanToc.Text.Length;
+        }
+
+        private void cboTimTonGiao_Enter(object sender, EventArgs e)
+        {
+            cboTonGiao.SelectionStart = cboTonGiao.Text.Length;
+        }
     }
 }

@@ -344,6 +344,7 @@
             this.txtTimMaHS.TabIndex = 26;
             this.txtTimMaHS.Text = "- Mã học sinh -";
             this.txtTimMaHS.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txtTimMaHS.Enter += new System.EventHandler(this.txtTimMaHS_Enter);
             // 
             // txtTimTenHS
             // 
@@ -353,6 +354,7 @@
             this.txtTimTenHS.TabIndex = 32;
             this.txtTimTenHS.Text = "- Tên học sinh -";
             this.txtTimTenHS.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.txtTimTenHS.Enter += new System.EventHandler(this.txtTimTenHS_Enter);
             // 
             // txtTimHoHS
             // 
@@ -362,6 +364,7 @@
             this.txtTimHoHS.TabIndex = 34;
             this.txtTimHoHS.Text = "- Họ -";
             this.txtTimHoHS.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.txtTimHoHS.Enter += new System.EventHandler(this.txtTimHoHS_Enter);
             // 
             // cboTimMaLop
             // 
@@ -372,6 +375,7 @@
             this.cboTimMaLop.TabIndex = 36;
             this.cboTimMaLop.Text = "- Mã lớp -";
             this.cboTimMaLop.SelectedIndexChanged += new System.EventHandler(this.cboTimMaLop_SelectedIndexChanged);
+            this.cboTimMaLop.Enter += new System.EventHandler(this.cboTimMaLop_Enter);
             // 
             // cboTimTonGiao
             // 
@@ -382,6 +386,7 @@
             this.cboTimTonGiao.TabIndex = 37;
             this.cboTimTonGiao.Text = "- Tôn giáo -";
             this.cboTimTonGiao.SelectedIndexChanged += new System.EventHandler(this.cboTimTonGiao_SelectedIndexChanged);
+            this.cboTimTonGiao.Enter += new System.EventHandler(this.cboTimTonGiao_Enter);
             // 
             // cboTimDanToc
             // 
@@ -392,6 +397,7 @@
             this.cboTimDanToc.TabIndex = 38;
             this.cboTimDanToc.Text = "- Dân tộc -";
             this.cboTimDanToc.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.cboTimDanToc.Enter += new System.EventHandler(this.cboTimDanToc_Enter);
             // 
             // dgvHocSinh
             // 
