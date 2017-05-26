@@ -182,7 +182,23 @@ namespace QuanLyTruongTHPT_FORM
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cboTimDanToc.SelectedIndex != 0) _dangTimDanToc = true;
+            else _dangTimDanToc = false;
+            string dieukien = "";
+            if (cboTimDanToc.SelectedIndex == 0) dieukien = "where DanToc like N'%'";
+            else dieukien = "where DanToc like N'%" + cboTimDanToc.Text + "%'";
+            if (_dangTimMa) dieukien += "AND MaHS like N'%" + txtMaHS.Text + "%'";
+            if (_dangTimHo) dieukien += "AND Ho like N'%" + txtHo.Text + "%'";
+            if (_dangTimMaLop)
+            {
+                if (cboTimMaLop.SelectedIndex != 0) dieukien += "AND MaLop like N'%" + cboTimMaLop.Text + "%'";
+            }
+            if (_dangTimTonGiao)
+            {
+                if (cboTimTonGiao.SelectedIndex != 0) dieukien += "AND TonGiao like N'%" + cboTimTonGiao.Text + "%'";
+            }
+            DataTable tbl = busHS.getHocsinh(dieukien);
+            dgvHocSinh.DataSource = tbl;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -424,6 +440,27 @@ namespace QuanLyTruongTHPT_FORM
             if (_dangTimTonGiao)
             {
                 if (cboTimTonGiao.SelectedIndex != 0) dieukien += "AND TonGiao like N'%" + cboTimTonGiao.Text + "%'";
+            }
+            if (_dangTimDanToc)
+            {
+                if (cboTimDanToc.SelectedIndex != 0) dieukien += "AND DanToc like N'%" + cboTimDanToc.Text + "%'";
+            }
+            DataTable tbl = busHS.getHocsinh(dieukien);
+            dgvHocSinh.DataSource = tbl;
+        }
+
+        private void cboTimTonGiao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboTimTonGiao.SelectedIndex != 0) _dangTimTonGiao = true;
+            else _dangTimTonGiao = false;
+            string dieukien = "";
+            if (cboTimTonGiao.SelectedIndex == 0) dieukien = "where TonGiao like N'%'";
+            else dieukien = "where TonGiao like N'%" + cboTimTonGiao.Text + "%'";
+            if (_dangTimMa) dieukien += "AND MaHS like N'%" + txtMaHS.Text + "%'";
+            if (_dangTimHo) dieukien += "AND Ho like N'%" + txtHo.Text + "%'";
+            if (_dangTimMaLop)
+            {
+                if (cboTimMaLop.SelectedIndex != 0) dieukien += "AND MaLop like N'%" + cboTimMaLop.Text + "%'";
             }
             if (_dangTimDanToc)
             {

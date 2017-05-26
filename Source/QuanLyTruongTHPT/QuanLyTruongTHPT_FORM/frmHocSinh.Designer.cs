@@ -381,6 +381,7 @@
             this.cboTimTonGiao.Size = new System.Drawing.Size(121, 21);
             this.cboTimTonGiao.TabIndex = 37;
             this.cboTimTonGiao.Text = "- Tôn giáo -";
+            this.cboTimTonGiao.SelectedIndexChanged += new System.EventHandler(this.cboTimTonGiao_SelectedIndexChanged);
             // 
             // cboTimDanToc
             // 
