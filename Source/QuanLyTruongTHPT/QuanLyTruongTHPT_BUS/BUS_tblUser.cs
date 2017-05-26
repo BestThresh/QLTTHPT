@@ -7,7 +7,7 @@ using QuanLyTruongTHPT_DAL;
 using QuanLyTruongTHPT_Entity;
 using System.Data;
 
-namespace QL_GV_HS_THPT_BUS
+namespace QuanLyTruongTHPT_BUS
 {
     public class BUS_tblUser
     {
