@@ -1,3 +1,16 @@
 C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.Properties.Resources.resources
 C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.csproj.GenerateResource.Cache
 C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT.exe.config
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.csprojResolveAssemblyReference.cache
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT.exe
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT.pdb
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_BUS.dll
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_DAL.dll
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_Entity.dll
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_FORM.dll
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_BUS.pdb
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_DAL.pdb
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_Entity.pdb
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\bin\Debug\QuanLyTruongTHPT_FORM.pdb
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.exe
+C:\Users\MrHoang\Desktop\QLTTHPT\Source\QuanLyTruongTHPT\QuanLyTruongTHPT\obj\Debug\QuanLyTruongTHPT.pdb
