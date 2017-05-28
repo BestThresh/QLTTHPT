@@ -120,6 +120,9 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGiaoVien.resx">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHocSinh.resx">
       <DependentUpon>frmHocSinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanTri.resx">
       <DependentUpon>frmQuanTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemGV.resx">
+      <DependentUpon>frmThemGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemTaiKhoan.resx">
       <DependentUpon>frmThemTaiKhoan.cs</DependentUpon>
