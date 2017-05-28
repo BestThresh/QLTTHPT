@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.ckcSave = new System.Windows.Forms.CheckBox();
+            this.ckcHienpw = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(92, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(296, 50);
             this.pictureBox1.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(195, 124);
+            this.txtUsername.Location = new System.Drawing.Point(195, 98);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(193, 20);
             this.txtUsername.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(195, 172);
+            this.txtPassword.Location = new System.Drawing.Point(195, 141);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(193, 20);
             this.txtPassword.TabIndex = 3;
@@ -75,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 127);
+            this.label2.Location = new System.Drawing.Point(89, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 4;
@@ -85,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 175);
+            this.label3.Location = new System.Drawing.Point(92, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 5;
@@ -112,11 +114,35 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // ckcSave
+            // 
+            this.ckcSave.AutoSize = true;
+            this.ckcSave.Location = new System.Drawing.Point(95, 186);
+            this.ckcSave.Name = "ckcSave";
+            this.ckcSave.Size = new System.Drawing.Size(63, 17);
+            this.ckcSave.TabIndex = 8;
+            this.ckcSave.Text = "Ghi nhớ";
+            this.ckcSave.UseVisualStyleBackColor = true;
+            this.ckcSave.CheckedChanged += new System.EventHandler(this.ckcSave_CheckedChanged);
+            // 
+            // ckcHienpw
+            // 
+            this.ckcHienpw.AutoSize = true;
+            this.ckcHienpw.Location = new System.Drawing.Point(293, 186);
+            this.ckcHienpw.Name = "ckcHienpw";
+            this.ckcHienpw.Size = new System.Drawing.Size(95, 17);
+            this.ckcHienpw.TabIndex = 9;
+            this.ckcHienpw.Text = "Hiện mật khẩu";
+            this.ckcHienpw.UseVisualStyleBackColor = true;
+            this.ckcHienpw.CheckedChanged += new System.EventHandler(this.ckcHienpw_CheckedChanged);
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 293);
+            this.Controls.Add(this.ckcHienpw);
+            this.Controls.Add(this.ckcSave);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.label3);
@@ -145,5 +171,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox ckcSave;
+        private System.Windows.Forms.CheckBox ckcHienpw;
     }
 }

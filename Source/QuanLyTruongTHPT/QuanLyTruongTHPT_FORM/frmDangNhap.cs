@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 using QuanLyTruongTHPT_BUS;
 using QuanLyTruongTHPT_Entity;
@@ -15,6 +16,7 @@ namespace QuanLyTruongTHPT_FORM
 {
     public partial class frmDangNhap : Form
     {
+        BUS_tblUser busUser = new BUS_tblUser();
         public frmDangNhap()
         {
             InitializeComponent();
@@ -108,6 +110,23 @@ namespace QuanLyTruongTHPT_FORM
         private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ckcSave_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckcHienpw_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckcHienpw.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
     }
 }
