@@ -335,7 +335,8 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGiaoVien";
-            this.Text = "frmGiaoVien";
+            this.Text = "Thông tin giáo viên";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGiaoVien_FormClosed);
             this.Load += new System.EventHandler(this.frmGiaoVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

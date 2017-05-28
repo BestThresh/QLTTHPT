@@ -156,5 +156,12 @@ namespace QuanLyTruongTHPT_FORM
             }
             catch { }
         }
+
+        private void frmGiaoVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
+        }
     }
 }
