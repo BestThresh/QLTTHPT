@@ -84,6 +84,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin giáo viên";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label1
             // 
@@ -273,6 +274,7 @@
             this.chkNam.TabIndex = 20;
             this.chkNam.Text = "Nam";
             this.chkNam.UseVisualStyleBackColor = true;
+            this.chkNam.CheckedChanged += new System.EventHandler(this.chkNam_CheckedChanged);
             // 
             // chkNu
             // 
@@ -295,6 +297,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmThemGV";
             this.Text = "Thêm giáo viên";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmThemGV_FormClosed);
+            this.Load += new System.EventHandler(this.frmThemGV_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
