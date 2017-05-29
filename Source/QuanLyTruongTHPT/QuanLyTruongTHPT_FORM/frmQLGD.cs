@@ -60,6 +60,23 @@ namespace QuanLyTruongTHPT_FORM
         }
         private void frmQLGD_Load(object sender, EventArgs e)
         {
+            var source = new AutoCompleteStringCollection();
+
+            DataTable tb = DAL_GV.getThongTinGV();
+            cboGiaoVien.DataSource = tb;
+            cboGiaoVien.DisplayMember = "HoTen";
+            cboGiaoVien.ValueMember = "MaGV";
+            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString());
+            cboGiaoVien.AutoCompleteCustomSource = source;
+
+            tb = DAL_Lop.getAllLop();
+            cboLop.DataSource = tb;
+            cboLop.DisplayMember = "TenLop";
+            cboLop.ValueMember = "MaLop";
+            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["TenLop"].ToString());
+            cboLop.AutoCompleteCustomSource = source;
+
+            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD();
 
         }
 
@@ -167,6 +184,37 @@ namespace QuanLyTruongTHPT_FORM
             if (txtTimGV.Text != "") dk += "and (Ho + ' ' + Ten) like N'%" + txtTimGV.Text + "%'";
             dgvDanhSach.DataSource = DAL_Giang.getThongTinGD(dk);
 
+        }
+
+        private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvDanhSach.Rows.Count - 1)
+            {
+                txtTiet.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Tiet"].Value.ToString();
+                cmbThu.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Thu"].Value.ToString();
+                cboGiaoVien.Text = dgvDanhSach.Rows[e.RowIndex].Cells["TenGV"].Value.ToString();
+                cboLop.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Lop"].Value.ToString();
+            }
+            else
+            {
+                ResetData();
+            }
+        }
+
+        private void cboLop_Validated(object sender, EventArgs e)
+        {
+            if (cboLop.SelectedValue == null)
+            {
+                MessageBox.Show("Không có lớp");
+                cboLop.Focus();
+            }
+        }
+
+        private void frmQLGD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Dispose();
         }
     }
 }

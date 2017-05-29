@@ -75,6 +75,7 @@
             this.cboLop.Name = "cboLop";
             this.cboLop.Size = new System.Drawing.Size(121, 21);
             this.cboLop.TabIndex = 2;
+            this.cboLop.Validated += new System.EventHandler(this.cboLop_Validated);
             // 
             // txtTimLop
             // 
@@ -200,6 +201,7 @@
             this.dgvDanhSach.Name = "dgvDanhSach";
             this.dgvDanhSach.Size = new System.Drawing.Size(595, 206);
             this.dgvDanhSach.TabIndex = 15;
+            this.dgvDanhSach.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellEnter);
             // 
             // TenGV
             // 
@@ -249,6 +251,7 @@
             this.Controls.Add(this.cboGiaoVien);
             this.Name = "frmQLGD";
             this.Text = "Quản lý giảng dạy";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmQLGD_FormClosed);
             this.Load += new System.EventHandler(this.frmQLGD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).EndInit();
             this.ResumeLayout(false);
