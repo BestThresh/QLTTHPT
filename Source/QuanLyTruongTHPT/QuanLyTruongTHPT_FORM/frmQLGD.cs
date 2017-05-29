@@ -141,5 +141,32 @@ namespace QuanLyTruongTHPT_FORM
             DAL_Giang.delGiangday(EC_Giang);
             Reset();
         }
+
+        private void cboGiaoVien_Validated(object sender, EventArgs e)
+        {
+            if (cboLop.SelectedValue == null)
+            {
+                MessageBox.Show("Không có lớp");
+                cboLop.Focus();
+            }
+        }
+
+        private void txtTimGV_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTimGV.Text != "") dk = "and (Ho + ' ' + Ten) like N'%" + txtTimGV.Text + "%'";
+            else dk = "";
+            if (txtTimLop.Text != "") dk += "and TenLop like '%" + txtTimLop.Text + "%'";
+            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD(dk);
+
+        }
+
+        private void txtTimLop_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTimLop.Text != "") dk = "and TenLop like '%" + txtTimLop.Text + "%'";
+            else dk = "";
+            if (txtTimGV.Text != "") dk += "and (Ho + ' ' + Ten) like N'%" + txtTimGV.Text + "%'";
+            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD(dk);
+
+        }
     }
 }

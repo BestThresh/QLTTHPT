@@ -58,6 +58,7 @@
             this.cboGiaoVien.Name = "cboGiaoVien";
             this.cboGiaoVien.Size = new System.Drawing.Size(258, 21);
             this.cboGiaoVien.TabIndex = 0;
+            this.cboGiaoVien.Validated += new System.EventHandler(this.cboGiaoVien_Validated);
             // 
             // cmbThu
             // 
@@ -82,6 +83,7 @@
             this.txtTimLop.Size = new System.Drawing.Size(100, 20);
             this.txtTimLop.TabIndex = 3;
             this.txtTimLop.Text = "-- Lớp";
+            this.txtTimLop.TextChanged += new System.EventHandler(this.txtTimLop_TextChanged);
             // 
             // txtTiet
             // 
@@ -97,6 +99,7 @@
             this.txtTimGV.Size = new System.Drawing.Size(100, 20);
             this.txtTimGV.TabIndex = 5;
             this.txtTimGV.Text = "-- Giáo viên";
+            this.txtTimGV.TextChanged += new System.EventHandler(this.txtTimGV_TextChanged);
             // 
             // label1
             // 
