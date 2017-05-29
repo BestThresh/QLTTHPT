@@ -28,11 +28,250 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cboGiaoVien = new System.Windows.Forms.ComboBox();
+            this.cboThu = new System.Windows.Forms.ComboBox();
+            this.cboLop = new System.Windows.Forms.ComboBox();
+            this.txtTimLop = new System.Windows.Forms.TextBox();
+            this.txtTiet = new System.Windows.Forms.TextBox();
+            this.txtTimGV = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // cboGiaoVien
+            // 
+            this.cboGiaoVien.FormattingEnabled = true;
+            this.cboGiaoVien.Location = new System.Drawing.Point(94, 34);
+            this.cboGiaoVien.Name = "cboGiaoVien";
+            this.cboGiaoVien.Size = new System.Drawing.Size(258, 21);
+            this.cboGiaoVien.TabIndex = 0;
+            // 
+            // cboThu
+            // 
+            this.cboThu.FormattingEnabled = true;
+            this.cboThu.Location = new System.Drawing.Point(94, 88);
+            this.cboThu.Name = "cboThu";
+            this.cboThu.Size = new System.Drawing.Size(121, 21);
+            this.cboThu.TabIndex = 1;
+            // 
+            // cboLop
+            // 
+            this.cboLop.FormattingEnabled = true;
+            this.cboLop.Location = new System.Drawing.Point(94, 61);
+            this.cboLop.Name = "cboLop";
+            this.cboLop.Size = new System.Drawing.Size(121, 21);
+            this.cboLop.TabIndex = 2;
+            // 
+            // txtTimLop
+            // 
+            this.txtTimLop.Location = new System.Drawing.Point(193, 153);
+            this.txtTimLop.Name = "txtTimLop";
+            this.txtTimLop.Size = new System.Drawing.Size(100, 20);
+            this.txtTimLop.TabIndex = 3;
+            this.txtTimLop.Text = "-- Lớp";
+            // 
+            // txtTiet
+            // 
+            this.txtTiet.Location = new System.Drawing.Point(287, 88);
+            this.txtTiet.Name = "txtTiet";
+            this.txtTiet.Size = new System.Drawing.Size(65, 20);
+            this.txtTiet.TabIndex = 4;
+            // 
+            // txtTimGV
+            // 
+            this.txtTimGV.Location = new System.Drawing.Point(87, 153);
+            this.txtTimGV.Name = "txtTimGV";
+            this.txtTimGV.Size = new System.Drawing.Size(100, 20);
+            this.txtTimGV.TabIndex = 5;
+            this.txtTimGV.Text = "-- Giáo viên";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Giáo viên";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Thứ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Lớp";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(256, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Tiết";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Tìm kiếm";
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(394, 32);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 11;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(394, 86);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 12;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(497, 86);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.TabIndex = 13;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(497, 32);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 14;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TenGV,
+            this.Lop,
+            this.Thu,
+            this.Tiet});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 189);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(595, 206);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // TenGV
+            // 
+            this.TenGV.DataPropertyName = "HoTen";
+            this.TenGV.HeaderText = "Giáo viên";
+            this.TenGV.Name = "TenGV";
+            this.TenGV.Width = 250;
+            // 
+            // Lop
+            // 
+            this.Lop.DataPropertyName = "TenLop";
+            this.Lop.HeaderText = "Lop";
+            this.Lop.Name = "Lop";
+            // 
+            // Thu
+            // 
+            this.Thu.DataPropertyName = "Thu";
+            this.Thu.HeaderText = "Thứ";
+            this.Thu.Name = "Thu";
+            // 
+            // Tiet
+            // 
+            this.Tiet.DataPropertyName = "TietDay";
+            this.Tiet.HeaderText = "Tiết";
+            this.Tiet.Name = "Tiet";
+            // 
+            // frmQLGD
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "frmQLGD";
+            this.ClientSize = new System.Drawing.Size(619, 418);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTimGV);
+            this.Controls.Add(this.txtTiet);
+            this.Controls.Add(this.txtTimLop);
+            this.Controls.Add(this.cboLop);
+            this.Controls.Add(this.cboThu);
+            this.Controls.Add(this.cboGiaoVien);
+            this.Name = "frmQLGD";
+            this.Text = "Quản lý giảng dạy";
+            this.Load += new System.EventHandler(this.frmQLGD_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cboGiaoVien;
+        private System.Windows.Forms.ComboBox cboThu;
+        private System.Windows.Forms.ComboBox cboLop;
+        private System.Windows.Forms.TextBox txtTimLop;
+        private System.Windows.Forms.TextBox txtTiet;
+        private System.Windows.Forms.TextBox txtTimGV;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tiet;
     }
 }
