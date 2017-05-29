@@ -79,8 +79,9 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "button1";
+            this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dgvTKB
             // 
@@ -216,7 +217,8 @@
             this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.lblClass);
             this.Name = "frmTKB";
-            this.Text = "frmTKB";
+            this.Text = "Thời khóa biểu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTKB_FormClosed);
             this.Load += new System.EventHandler(this.frmTKB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).EndInit();
             this.ResumeLayout(false);
