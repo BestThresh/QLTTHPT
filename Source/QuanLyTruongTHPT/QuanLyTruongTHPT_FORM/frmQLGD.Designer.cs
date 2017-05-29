@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.cboGiaoVien = new System.Windows.Forms.ComboBox();
-            this.cboThu = new System.Windows.Forms.ComboBox();
+            this.cmbThu = new System.Windows.Forms.ComboBox();
             this.cboLop = new System.Windows.Forms.ComboBox();
             this.txtTimLop = new System.Windows.Forms.TextBox();
             this.txtTiet = new System.Windows.Forms.TextBox();
@@ -43,12 +43,12 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDanhSach = new System.Windows.Forms.DataGridView();
             this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).BeginInit();
             this.SuspendLayout();
             // 
             // cboGiaoVien
@@ -59,13 +59,13 @@
             this.cboGiaoVien.Size = new System.Drawing.Size(258, 21);
             this.cboGiaoVien.TabIndex = 0;
             // 
-            // cboThu
+            // cmbThu
             // 
-            this.cboThu.FormattingEnabled = true;
-            this.cboThu.Location = new System.Drawing.Point(94, 88);
-            this.cboThu.Name = "cboThu";
-            this.cboThu.Size = new System.Drawing.Size(121, 21);
-            this.cboThu.TabIndex = 1;
+            this.cmbThu.FormattingEnabled = true;
+            this.cmbThu.Location = new System.Drawing.Point(94, 88);
+            this.cmbThu.Name = "cmbThu";
+            this.cmbThu.Size = new System.Drawing.Size(121, 21);
+            this.cmbThu.TabIndex = 1;
             // 
             // cboLop
             // 
@@ -163,6 +163,7 @@
             this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -182,19 +183,20 @@
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // dataGridView1
+            // dgvDanhSach
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenGV,
             this.Lop,
             this.Thu,
             this.Tiet});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 189);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(595, 206);
-            this.dataGridView1.TabIndex = 15;
+            this.dgvDanhSach.Location = new System.Drawing.Point(12, 189);
+            this.dgvDanhSach.Name = "dgvDanhSach";
+            this.dgvDanhSach.Size = new System.Drawing.Size(595, 206);
+            this.dgvDanhSach.TabIndex = 15;
             // 
             // TenGV
             // 
@@ -226,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 418);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDanhSach);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);
@@ -240,12 +242,12 @@
             this.Controls.Add(this.txtTiet);
             this.Controls.Add(this.txtTimLop);
             this.Controls.Add(this.cboLop);
-            this.Controls.Add(this.cboThu);
+            this.Controls.Add(this.cmbThu);
             this.Controls.Add(this.cboGiaoVien);
             this.Name = "frmQLGD";
             this.Text = "Quản lý giảng dạy";
             this.Load += new System.EventHandler(this.frmQLGD_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,7 +256,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cboGiaoVien;
-        private System.Windows.Forms.ComboBox cboThu;
+        private System.Windows.Forms.ComboBox cmbThu;
         private System.Windows.Forms.ComboBox cboLop;
         private System.Windows.Forms.TextBox txtTimLop;
         private System.Windows.Forms.TextBox txtTiet;
@@ -268,7 +270,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDanhSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
         private System.Windows.Forms.DataGridViewTextBoxColumn Thu;
