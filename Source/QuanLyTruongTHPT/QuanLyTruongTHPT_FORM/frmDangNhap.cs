@@ -128,5 +128,10 @@ namespace QuanLyTruongTHPT_FORM
                 txtPassword.UseSystemPasswordChar = true;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

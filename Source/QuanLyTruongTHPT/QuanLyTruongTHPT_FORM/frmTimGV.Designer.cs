@@ -43,6 +43,7 @@
             this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,11 +178,21 @@
             this.colSDT.HeaderText = "SĐT";
             this.colSDT.Name = "colSDT";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tìm";
+            // 
             // frmTimGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 401);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvGiaoVien);
             this.Controls.Add(this.cboTimDiaChi);
             this.Controls.Add(this.txtTimHoGV);
@@ -215,5 +226,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSDT;
+        private System.Windows.Forms.Label label1;
     }
 }
