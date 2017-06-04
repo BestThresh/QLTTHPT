@@ -24,7 +24,8 @@ namespace QuanLyTruongTHPT_DAL
             }
             if (KetNoiDB.connect.State != ConnectionState.Open)
             {
-                KetNoiDB.connect.Open();
+                KetNoiDB.connect.Open();//sua the nao day ban :v
+                //thay chuoi ket noi thoi o app.config y--->thi ban thay di con gi thay roi, vẫn báo lỗi đấy
             }
         }
         //Dong ket noi

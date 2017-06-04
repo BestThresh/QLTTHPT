@@ -22,25 +22,75 @@ namespace QuanLyTruongTHPT_FORM
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHocSinh frm = new frmHocSinh();
-            frm.Show();
+
+        }
+
+        private void TSDangNhap_Click(object sender, EventArgs e)
+        {
+            frmDangNhap f = new frmDangNhap();
+            f.Show();
             this.Dispose();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void TSDangKi_Click(object sender, EventArgs e)
         {
-            frmGiaoVien frm = new frmGiaoVien();
-            frm.Show();
+            frmThemTaiKhoan f = new frmThemTaiKhoan();
+            f.Show();
             this.Dispose();
         }
 
-        private void buttonTKB_Click(object sender, EventArgs e)
+        private void TSHocSinh_Click(object sender, EventArgs e)
+        {
+            frmHocSinh f = new frmHocSinh();
+            f.Show();
+            this.Dispose();
+        }
+
+        private void TSGiaoVien_Click(object sender, EventArgs e)
+        {
+            frmGiaoVien f = new frmGiaoVien();
+            f.Show();
+            this.Dispose();
+        }
+
+        private void TSThemGIeoVien_Click(object sender, EventArgs e)
+        {
+            frmThemGV f = new frmThemGV();
+            f.Show();
+            this.Dispose();
+        }
+
+        private void TSTimGV_Click(object sender, EventArgs e)
+        {
+            frmTimGV f = new frmTimGV();
+            f.Show();
+            this.Dispose();
+
+        }
+
+        private void quảnLýGiáoDụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TSTKB_Click(object sender, EventArgs e)
         {
             frmTKB frm = new frmTKB();
             frm.Show();
             this.Dispose();
         }
+
+        private void hướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }
